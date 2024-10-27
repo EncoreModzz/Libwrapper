@@ -1,17 +1,3 @@
---[[
-
-Rayfield Interface Suite
-by Sirius
-
-Unxable | Edited for hes own Privat MicUp Script
-shlex | Designing + Programming
-iRay  | Programming
-
-
-]]
-
-
-
 local Release = "Beta 8"
 local NotificationDuration = 6.5
 local RayfieldFolder = "Rayfield"
@@ -28,7 +14,7 @@ local RayfieldLibrary = {
 			TextColor = Color3.fromRGB(78, 114, 167),
 
 			Background = Color3.fromRGB(0, 23, 56),
-			Topbar = Color3.fromRGB(34, 34, 34),
+			Topbar = Color3.fromRGB(0, 26, 66),
 			Shadow = Color3.fromRGB(0, 23, 56),
 
 			NotificationBackground = Color3.fromRGB(0, 23, 56),
@@ -40,11 +26,11 @@ local RayfieldLibrary = {
 			TabTextColor = Color3.fromRGB(240, 240, 240),
 			SelectedTabTextColor = Color3.fromRGB(50, 50, 50),
 
-			ElementBackground = Color3.fromRGB(35, 35, 35),
-			ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
-			SecondaryElementBackground = Color3.fromRGB(25, 25, 25), -- For labels and paragraphs
+			ElementBackground = Color3.fromRGB(0, 23, 56),
+			ElementBackgroundHover = Color3.fromRGB(0, 23, 56),
+			SecondaryElementBackground = Color3.fromRGB(0, 23, 56), -- For labels and paragraphs
 			ElementStroke = Color3.fromRGB(50, 50, 50),
-			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
+			SecondaryElementStroke = Color3.fromRGB(0, 23, 56), -- For labels and paragraphs
 
 			SliderBackground = Color3.fromRGB(43, 105, 159),
 			SliderProgress = Color3.fromRGB(43, 105, 159),
