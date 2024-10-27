@@ -2,9 +2,9 @@ local LibWrapper = {}
 
 local originalLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapperorginal.lua'))()
 
-function LibWrapper:CreateWindow(name)
+function LibWrapper:CreateWindow(Name)
     local window = originalLib:CreateWindow({
-        Name = name .. "Encore Modzz",
+        Name = "Encore Modzz",
         LoadingTitle = "MIC UP SCRIPT",
         LoadingSubtitle = "by Encore Modzz"
     })
