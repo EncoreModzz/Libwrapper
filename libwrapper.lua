@@ -4,7 +4,7 @@ local originalLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/E
 
 function LibWrapper:CreateWindow(Name)
     local window = originalLib:CreateWindow({
-        Name = "Encore Modzz",
+        Name = "MIC UP | ENCORE MODZZ",
         LoadingTitle = "MIC UP SCRIPT",
         LoadingSubtitle = "by Encore Modzz"
     })
