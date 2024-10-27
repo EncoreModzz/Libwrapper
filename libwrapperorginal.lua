@@ -11,26 +11,26 @@ local RayfieldLibrary = {
 	Theme = {
 		Default = {
 			TextFont = "Default", -- Default will use the various font faces used across Rayfield
-			TextColor = Color3.fromRGB(78, 114, 167),
+			TextColor = Color3.fromRGB(240, 240, 240),
 
-			Background = Color3.fromRGB(255, 255, 255),
-			Topbar = Color3.fromRGB(255, 255, 255),
-			Shadow = Color3.fromRGB(0, 23, 56),
+			Background = Color3.fromRGB(255, 126, 126),
+			Topbar = Color3.fromRGB(34, 34, 34),
+			Shadow = Color3.fromRGB(20, 20, 20),
 
-			NotificationBackground = Color3.fromRGB(0, 23, 56),
-			NotificationActionsBackground = Color3.fromRGB(255, 255, 255),
+			NotificationBackground = Color3.fromRGB(20, 20, 20),
+			NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
 
-			TabBackground = Color3.fromRGB(0, 26, 66),
+			TabBackground = Color3.fromRGB(80, 80, 80),
 			TabStroke = Color3.fromRGB(85, 85, 85),
 			TabBackgroundSelected = Color3.fromRGB(210, 210, 210),
 			TabTextColor = Color3.fromRGB(240, 240, 240),
 			SelectedTabTextColor = Color3.fromRGB(50, 50, 50),
 
-			ElementBackground = Color3.fromRGB(0, 23, 56),
-			ElementBackgroundHover = Color3.fromRGB(0, 23, 56),
-			SecondaryElementBackground = Color3.fromRGB(0, 23, 56), -- For labels and paragraphs
+			ElementBackground = Color3.fromRGB(35, 35, 35),
+			ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
+			SecondaryElementBackground = Color3.fromRGB(25, 25, 25), -- For labels and paragraphs
 			ElementStroke = Color3.fromRGB(50, 50, 50),
-			SecondaryElementStroke = Color3.fromRGB(0, 23, 56), -- For labels and paragraphs
+			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
 
 			SliderBackground = Color3.fromRGB(43, 105, 159),
 			SliderProgress = Color3.fromRGB(43, 105, 159),
@@ -89,7 +89,6 @@ local RayfieldLibrary = {
 		}
 	}
 }
-
 
 
 -- Services
@@ -881,7 +880,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield Interface Suite"
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Unxable"
-	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
+	if Settings.LoadingTitle ~= "" then
 		LoadingFrame.Version.Text = " "
 	end
 	Topbar.Visible = false
