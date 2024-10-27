@@ -1,12 +1,12 @@
 local LibWrapper = {}
 
-local originalLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua'))()
+local originalLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/EncoreModzz/Libwrapper/refs/heads/main/libwrapperorginal.lua'))()
 
 function LibWrapper:CreateWindow(name)
     local window = originalLib:CreateWindow({
-        Name = name .. "Privat MicUp Script by Unxable",
-        LoadingTitle = "Privat MicUp Script",
-        LoadingSubtitle = "by Unxable"
+        Name = name .. "Encore Modzz",
+        LoadingTitle = "MIC UP SCRIPT",
+        LoadingSubtitle = "by Encore Modzz"
     })
     
     local windowWrapper = {}
