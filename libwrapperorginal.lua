@@ -1,3 +1,15 @@
+--[[
+
+Rayfield Interface Suite
+by Sirius
+
+shlex | Designing + Programming
+iRay  | Programming
+
+]]
+
+
+
 local Release = "Beta 8"
 local NotificationDuration = 6.5
 local RayfieldFolder = "Rayfield"
@@ -13,11 +25,11 @@ local RayfieldLibrary = {
 			TextFont = "Default", -- Default will use the various font faces used across Rayfield
 			TextColor = Color3.fromRGB(240, 240, 240),
 
-			Background = Color3.fromHex(#001738),
+			Background = Color3.fromRGB(25, 25, 25),
 			Topbar = Color3.fromRGB(34, 34, 34),
 			Shadow = Color3.fromRGB(20, 20, 20),
 
-			NotificationBackground = Color3.fromRGB(202, 92, 92),
+			NotificationBackground = Color3.fromRGB(20, 20, 20),
 			NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
 
 			TabBackground = Color3.fromRGB(80, 80, 80),
@@ -28,7 +40,7 @@ local RayfieldLibrary = {
 
 			ElementBackground = Color3.fromRGB(35, 35, 35),
 			ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
-			SecondaryElementBackground = Color3.fromRGB(119, 132, 255),
+			SecondaryElementBackground = Color3.fromRGB(25, 25, 25), -- For labels and paragraphs
 			ElementStroke = Color3.fromRGB(50, 50, 50),
 			SecondaryElementStroke = Color3.fromRGB(40, 40, 40), -- For labels and paragraphs
 
@@ -89,6 +101,7 @@ local RayfieldLibrary = {
 		}
 	}
 }
+
 
 
 -- Services
@@ -879,9 +892,9 @@ function RayfieldLibrary:CreateWindow(Settings)
 	Main.Shadow.Image.ImageTransparency = 1
 	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield Interface Suite"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Unxable"
-	if Settings.LoadingTitle ~= "" then
-		LoadingFrame.Version.Text = " "
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius"
+	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
+		LoadingFrame.Version.Text = "Rayfield UI"
 	end
 	Topbar.Visible = false
 	Elements.Visible = false
